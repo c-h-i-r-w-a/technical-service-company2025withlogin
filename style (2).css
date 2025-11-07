@@ -1,0 +1,154 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5)), url('Deepwater-07-2.3.001-bigpicture_07_2.jpg');
+  min-height: 100vh;
+  margin: 0;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #333;
+  background-size: cover;
+  background-size: 100% 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  width: 300px;
+  text-align: center;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #0056b3;
+}
+
+a {
+  color: #007bff;
+  text-decoration: none;
+}
+h1{
+/* 1. Définir le dégradé sombre */
+    background: linear-gradient(
+        to right, 
+        #000000, /* Noir pur (à gauche) */
+        #413f3f, /* Gris très foncé (au centre) */
+        #6e0505  /* Rouge/Bourgogne très foncé (à droite) */
+    );
+
+    /* 2. Indiquer au navigateur de cliper l'arrière-plan sur la forme du texte */
+    -webkit-background-clip: text; /* Pour compatibilité avec Chrome/Safari */
+    background-clip: text;
+
+    /* 3. Rendre le texte transparent pour que l'arrière-plan soit visible */
+    color: transparent;
+
+    /* 4. Styles pour un rendu optimal (optionnel) */
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    padding: 20px;
+    width: 50%;
+}
+h3{
+ /* 🎨 DEGRADÉ & COULEUR SOMBRE (comme vu précédemment) */
+    background: linear-gradient(
+        45deg,              /* Angle du dégradé */
+        #1a1a1a,            /* Noir très sombre */
+        #444444,            /* Gris anthracite */
+        #1a1a1a             /* Retour au noir */
+    );
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+
+    /* 🖋️ POLICE & TAILLE */
+    font-family: 'Arial Black', sans-serif; /* Une police épaisse pour que le dégradé ressorte */
+    font-size: 25px;
+    font-weight: 900; /* Le plus gras possible */
+    text-transform: uppercase;
+    text-align: center;
+
+    /* 💥 EFFET D'OMBRE (Le point clé pour attirer l'œil) */
+    /* L'ombre donne de la profondeur au texte transparent */
+    text-shadow: 
+        2px 2px 0px rgba(255, 255, 255, 0.1),  /* Effet de bordure blanche très légère (lumière) */
+        4px 4px 6px rgba(0, 0, 0, 0.5);        /* Ombre principale pour la profondeur (sombre) */
+
+    /* ✨ EFFET DE LÉGÈRE TRANSFORMATION */
+    /* Une petite rotation ou perspective pour un effet "attirant" */
+    transform: perspective(500px) rotateX(5deg); 
+    
+    /* Transition pour l'interactivité (voir ci-dessous) */
+    transition: transform 0.3s ease-out, text-shadow 0.3s ease-out;
+}
+
+/* 🖱️ INTERACTIVITÉ (Optionnel : rend le style encore plus dynamique) */
+.titre-attirant:hover {
+    /* Lève légèrement le texte au survol */
+    transform: perspective(500px) rotateX(0deg) scale(1.02); 
+    text-shadow: 
+        1px 1px 0px rgba(255, 255, 255, 0.2),
+        6px 6px 10px rgba(0, 0, 0, 0.8); /* Ombre plus intense */
+    cursor: pointer;
+}
+h4{
+   background: linear-gradient(
+        to right, 
+        #000000, /* Noir pur (à gauche) */
+        #333333, /* Gris très foncé (au centre) */
+        #500000  /* Rouge/Bourgogne très foncé (à droite) */
+    );
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+     -webkit-background-clip: text; /* Pour compatibilité avec Chrome/Safari */
+    background-clip: text;
+    color: transparent;
+    font-family: 'Tangerine', cursive;
+}
+h5{
+   background: linear-gradient(
+        to right, 
+        #000000, /* Noir pur (à gauche) */
+        #333333, /* Gris très foncé (au centre) */
+        #500000  /* Rouge/Bourgogne très foncé (à droite) */
+    );
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+     -webkit-background-clip: text; /* Pour compatibilité avec Chrome/Safari */
+    background-clip: text;
+    color: transparent;
+    font-family: 'Tangerine', cursive;
+}
+
