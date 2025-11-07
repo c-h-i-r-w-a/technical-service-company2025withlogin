@@ -81,7 +81,9 @@ app.use('/site', (req, res, next) => {
 });
 
 // === 7. DÉMARRAGE ===
-app.listen(3000, () => {
+const port = process.env.PORT || 3000;
+app.listen(port, () => {
+  console.log(`Serveur démarré sur le port ${port}`);
   console.log('Serveur démarré sur http://localhost:3000');
   console.log('CSS, images, vidéos → TOUT CHARGE !');
   console.log('Liens login ↔ inscription → FONCTIONNENT !');
