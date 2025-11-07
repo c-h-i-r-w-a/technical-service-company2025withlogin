@@ -1,0 +1,475 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'poping',sans-serif;
+    scroll-behavior: smooth;
+}
+p{
+    font-weight: 300;
+    color: #111;
+}
+header{
+position: fixed;
+top: 0%;
+left:0%;
+padding: 20px 10px;
+width: 100%;
+z-index: 1;
+display: flex;
+justify-content: space-evenly;
+align-items: center;
+transition: 0.5s;
+}
+
+.logo{
+color: #111;
+font-weight: bold;
+font-size: 1.8em;
+text-decoration: none;
+}
+
+.logo span{
+    color: #FB911F;
+    font-size: 1.8em;
+}
+.navbar{
+    display: flex;
+    position: relative;
+}
+.navbar li{
+    list-style: none;
+}
+.navbar a{
+    color: #111;
+    text-decoration: none;
+    margin-left: 30px;
+    font-weight: 700;
+}
+.navbar a.btn-order{
+    padding: 10px;
+    background: #FB911F;
+    margin-top: -10px;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.btn-order:hover{
+    background: #d87710;
+    transition: ease-out;
+}
+header .navbar li a:hover{
+    color: #FB911F;
+    border-bottom: 2px solid hwb(34 6% 1%);
+
+}
+.banniere{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(19, 185, 190);
+    background-size: cover;
+}
+
+.banniere .content{
+    max-width: 70%;
+    text-align: center;
+}
+.banniere .content h2{
+    color: #fff;
+    font-size: 3em;
+    text-transform: capitalize;
+}
+.content p:nth-child(2){
+    color: #fff;
+    font-size: 1.5em;
+}
+.btn1{
+    font-size: 1.2em;
+    color: #fff;
+    background: #FB911F;
+    padding: 10px 20px;
+    display: inline-block;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 1px;
+    transition: 0.5s;
+    margin-left: 10px;
+}
+
+.btn2{
+    font-size: 1.2em;
+    color: #fff;
+    background: #2a4963;
+    padding: 10px 20px;
+    display: inline-block;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 1px;
+    transition: 0.5s;
+    margin-left: 10px;
+}
+.btn1:hover{
+    letter-spacing: 3px;
+}
+.btn2:hover{
+    letter-spacing: 3px;
+}
+section{
+    padding: 100px;
+    background-color: rgba(159, 238, 238, 0.548);
+}
+.row{
+    position: relative;
+    width: 95%;
+    display: flex;
+    justify-content: space-between; 
+}
+.row .col50{
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    margin: left;
+
+} 
+.row .col50 .img{
+    border-radius: 5%;
+}
+.row .col50 h2{
+    margin-bottom: 20px;
+}
+.title-texte{
+    color: #000;
+    font-size: 2em;
+    font-weight: 300;
+    margin: center;
+}
+.title-texte span{
+color: #FB911F;
+font-size: 2em;
+font-weight: 700px;
+}
+p{
+    padding-top: 1em;
+    font-size: 1.3em;
+    line-height: 1.15em;
+}
+.row .col50 img{
+    height: 700px;
+    width: 600px;
+    top: 10%;
+    left: 10%;
+    position: relative;
+}
+.galery{
+    background-color: #fff;
+    margin-top: -50px;
+
+}
+.titlee span{
+color: #FB911F;
+font-size: 2em;
+font-weight: 700px;
+}
+.titlee{
+    color: #000;
+    font-size: 2em;
+    font-weight: 300;
+    margin: center;
+}
+.galery .content{
+  display: grid;
+    /* Changement pour un responsive plus simple sur 3 colonnes */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+    gap: 30px; 
+    margin-top: 40px;
+}
+.galery .content .box{
+    /* Suppression des largeurs fixes pour utiliser la grille */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    background: #fff;
+    transition: 0.3s;
+    border-radius: 8px;
+    overflow: hidden;
+}
+.galery .content .box:hover {
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px);
+}
+.galery .content .box .imbox{
+    position: relative;
+    width: 100%;
+    height: 250px; /* Hauteur fixe pour les images */
+}
+.galery .content .box .imbox img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.galery .content .box .texte{
+    padding: 15px;
+    text-align: center;
+}
+.galery .content .box .texte h3{
+    font-weight: 600;
+    color: #3f5f8b;
+}
+.galery-btn{
+     font-size: 1.2em;
+    color: #fff;
+    background: #FB911F;
+    padding: 10px 20px;
+    display: inline-block;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 1px;
+    transition: 0.5s;
+    margin-left: 10px;
+    position:absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.galery-btn:hover{
+   letter-spacing: 3px; 
+}
+.Testimony{
+    margin-top: -50px;
+    float: center;
+    text-align: center;
+}
+
+.title{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.Testimony .content{
+    display: flex;
+    margin-top: 40px;
+    margin-left: -110px;
+    width: 120%;
+    grid-template-columns: repeat(4, 1fr);
+    row-gap: 20px; 
+    align-content: center;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+}
+.Testimony .content .box:hover{
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px);
+    transition: 0.5s;
+}
+.Testimony .content .box{
+    width: 100%;
+    margin: 20px;
+   background: #fff;
+   justify-content: center;
+   display: flex;
+   flex-direction: column;
+   border-radius: 45px;
+   align-content: center; 
+   padding: 20px;
+   transition: 3s;
+}
+.Testimony .content .box .imbox{
+    position: relative;
+    width: 100%;
+    height: 200px;
+}
+.Testimony .content .box .imbox img{
+    position: relative;
+    top: 0%;
+    left: 0%;
+    width: 100%; 
+    height: 220px;
+    object-fit: cover;
+    border-radius: 70%;
+    }
+    .Testimony .texte p{
+        font-style: italic;
+        font-size: 0.9;  
+    }
+    .Testimony .texte h3{
+        margin: 20px;
+        font-size: 1.2em;  
+        font-style: italic;
+        color: #FB911F;font-weight: 600;
+    }
+  
+      button {
+        background-color: #4CAF50;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+      }
+    button:hover{
+        background: rgb(27, 88, 3);
+    }
+      
+      .image-container {
+        display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+      }
+      
+      .img .image {
+        width: 32%; 
+  padding: 10px;
+  opacity: 1; 
+  transition: opacity 0.5s ease-in-out; 
+      }
+      .image-container .box{
+        width: 350px;
+        justify-content: center;
+        margin: 20px;
+        border: 20px solid #fff;
+        box-shadow: 20px 15px 35px rgba(0, 0, 0, 0.8);
+    }
+    .contact{
+        background-image: url(im.jpg);
+        background-size: cover;
+        box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.8);
+        width: 100%;
+        background-position: unset;
+    }
+    .contactform{
+        padding: 75px 50px;
+        background: #fff;
+        box-shadow: 5px 15px 50px rgba(0, 0, 0, 0.8);
+        max-width: 500px;
+        margin-top: 50px;
+        justify-content: center;
+        align-items: center;
+        margin-left: 28%;  
+        border-radius: 2.5%;
+    }
+    .contactform .inputboite{
+        position: relative;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .contactform h3{
+        color: #111;
+        font-size: 1.2em;
+        margin-bottom: 20px;
+    }
+    .contactform .inputboite input,
+    .contactform .inputboite textarea{
+        width: 100%;
+        border: 1px solid #555;
+        padding: 10px;
+        color: #111;
+        outline: none;
+        font-size: 16px;
+        font-weight: 300;
+        resize: none;
+        border-radius: 9px;
+    }
+    .contactform .inputboite input[type="submit"]{
+        font-size: 1em;
+        font-weight: 700;
+        color: #fff;
+        background: #fB911f;
+        display: inline-block;
+        cursor: pointer;
+        text-transform: uppercase;
+        text-decoration: none;
+        letter-spacing: 1.5px;
+        outline: none;
+        border: none;
+        transition: 0.5s;
+        max-width: 100px;
+        align-items: center;
+        justify-content: center;
+    }
+    .title-texte{
+        color: #fff;
+    }
+    header {
+        background-color: rgba(19, 185, 190, 0.3);
+        padding: 10px 10px;
+        box-shadow: 0px 5px 20px rgba(0,0,0, 0.02);
+    }
+    footer {
+    padding: 20px 100px;
+    background-color: #111;
+    color: #fff;
+    text-align: center;
+    }
+    footer p {
+    color: #fff;
+    font-size: 1em;
+    padding: 0;
+    }
+      
+      @media (max-widt: 991px) {
+        .row {
+            position: relative;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+      }
+      .row{
+        flex-direction: column;
+      }
+    }
+
+    /* Style du bouton rond vert en haut à droite  */
+.logout {
+    /* --- Positionnement en haut à droite --- */
+    position: fixed; /* Reste visible même en scrollant */
+    top: 20px;       /* Distance depuis le haut de la fenêtre */
+    right: 20px;     /* Distance depuis la droite de la fenêtre */
+    z-index: 1000;   /* S'assure qu'il est au-dessus des autres éléments */
+
+    /* --- Forme ronde --- */
+    width: 80px;     /* Définir une largeur et une hauteur égales */
+    height: 80px;
+    border-radius: 50%; /* Rend le bouton parfaitement rond */
+
+    /* --- Couleur et apparence --- */
+    background-color: #4CAF50; /* Un vert classique (vous pouvez changer le code couleur) */
+    color: white;              /* Couleur du texte/symbole */
+    font-size: 20px;
+    line-height: 60px;         /* Centre verticalement le contenu (si pas de padding) */
+    text-align: center;        /* Centre horizontalement le contenu */
+    border: none;              /* Supprime la bordure par défaut */
+    cursor: pointer;           /* Indique que c'est cliquable */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Ajoute une petite ombre (optionnel) */
+    border: 5px solid #FF9800; /* 5px d'épaisseur, style solide, couleur orange */
+    
+    /* Optionnel : pour le texte/symbole si vous n'utilisez pas line-height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Style de survol (hover) pour l'interactivité */
+.logout:hover {
+    background-color: #45a049; /* Vert légèrement plus foncé au survol */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+.logout a {
+    color: rgb(20, 2, 2);
+    text-decoration: none;
+    display: block;
+    font-weight: bolder;
+}

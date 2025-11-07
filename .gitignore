@@ -1,0 +1,9 @@
+# Ignorer les modules Node.js
+node_modules/
+
+# Ignorer la base de données (elle se recrée)
+users.db
+*.db
+
+# Ignorer les logs
+*.log
